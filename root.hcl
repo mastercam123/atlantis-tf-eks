@@ -6,9 +6,9 @@ remote_state {
     region         = "eu-west-1"
     encrypt        = true
     dynamodb_table = "tf_lock_table"
+  }
   generate = {
     path      = "backend.tf"
     if_exists = "overwrite_terragrunt"
   }
- }
 }
